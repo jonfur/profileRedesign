@@ -11,16 +11,16 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
-<body>
+<body id="top">
   <div class="navbar navbar-fixed-top well-lg">
     <div class="container">
       <div class="navbar-header page-scroll">
-        <a href="#" class="navbar-brand">Jonathan Chickie</a>
+        <a href="#top" class="navbar-brand">Jonathan Chickie</a>
       </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#portfolio-head">Portfolio</a></li>
+        <li><a href="#about-head">About</a></li>
+        <li><a href="#contact-head">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -31,10 +31,10 @@
     <div class="intro-text">
       <h1 class="text-center nameplate">Jonathan Chickie</h1>
       <hr class="bird-light"></hr>
-      <h3 class="text-center subtitle"><i class="fa fa-graduation-cap"></i>Computer Science Student<i class="fas fa-globe"></i>Web Developer<i class="fas fa-desktop"></i>Software Developer</h3>
+      <h3 class="text-center subtitle"><i class="fas fa-globe"></i>Web Developer<i class="fa fa-graduation-cap"></i>Computer Science Student<i class="fas fa-desktop"></i>Software Developer</h3>
     </div>
   </div>
-  <div class="portfolio container" >
+  <div class="portfolio container" id="portfolio-head" >
     <h1 class="text-center section-header">Portfolio</h1>
     <hr class="bird-dark"></hr>
     <div class="row">
@@ -100,7 +100,7 @@
       </div>
     </div>
   </div>
-  <div class="about container-fluid">
+  <div class="about container-fluid" id="about-head">
     <h1 class="text-center section-header">About</h1>
     <hr class="bird-light"></hr>
     <div class="row">
@@ -112,22 +112,22 @@
       </div>
     </div>
   </div>
-  <div class="contact container-fluid">
+  <div class="contact container-fluid" id="contact-head">
     <h1 class="text-center section-header">Contact Me</h1>
     <hr class="bird-dark"></hr>
-    <form>
+    <form action="http://jonathanchickie.com" method="post">
       <div class="row col-md-6 col-md-offset-3">
         <div class="form-group">
-          <input type="text" class="form-control" id="contact-name" placeholder="Name">
+          <input type="text" class="form-control" id="contact-name" name="form-name" placeholder="Name">
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" id="contact-email" placeholder="Email Address">
+          <input type="email" class="form-control" id="contact-email" name="form-mail" placeholder="Email Address">
         </div>
         <div class="form-group">
-          <input type="tel" class="form-control" id="contact-tel" placeholder="Phone Number">
+          <input type="tel" class="form-control" id="contact-tel" name="form-tel" placeholder="Phone Number">
         </div>
         <div class="form-group">
-          <textarea rows="5" class="form-control" id="contact-message" placeholder="Message"></textarea>
+          <textarea rows="5" class="form-control" id="contact-message" name="form-message" placeholder="Message"></textarea>
         </div>
         <div class="form group">
           <button type="submit" class="btn btn-success btn-lg">Send</button>
@@ -184,8 +184,9 @@
   </div>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
